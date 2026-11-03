@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/lhod.css?v=3">
+<link rel="stylesheet" href="assets/css/lhod.css?v=4">
 </head>
 <body>
 
@@ -44,8 +44,16 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="mask mask--a"><span>Foto pendiente<br>Fachada en Cra. 80</span></div>
-    <div class="mask mask--b"><span>Foto pendiente<br>Barra y cocina</span></div>
+    <div class="mask mask--a" style="background:none;border:0">
+      <img src="assets/img/foto/cartel-cafe.webp" width="600" height="600" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover"
+           alt="Cartel en la puerta del bar anunciando el café">
+    </div>
+    <div class="mask mask--b" style="background:none;border:0">
+      <img src="assets/img/foto/barra-botellas.webp" width="1200" height="675" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover"
+           alt="La barra del bar con sus botellas bajo luz roja">
+    </div>
     <div class="wrap hero__inner">
       <p class="bracket">Visítanos</p>
       <h1 class="d-xl">Laureles<span class="aside">(Medellín)</span></h1>
@@ -68,6 +76,10 @@
       <div class="sec__head">
         <p class="bracket">Dónde estamos</p>
         <h2 class="d-lg">Cra. 80<span class="aside">#33-41</span></h2>
+      </div>
+      <div style="overflow:hidden;border-radius:var(--r-card);margin-bottom:var(--s6)">
+        <img src="assets/img/foto/interior-danzig.webp" width="1200" height="675" loading="lazy" decoding="async"
+             style="width:100%;height:auto" alt="Interior del bar con luz roja y arte de Danzig en la pared">
       </div>
       <div class="split">
         <div class="prose">
@@ -107,6 +119,23 @@
       <p class="muted" style="margin-top:var(--s3);font-family:var(--data);font-size:12px;letter-spacing:.08em">
         Coordenadas tomadas del mapa que ya usa su sitio actual: 6.2394033, −75.6004126.
       </p>
+    </div>
+  </section>
+
+  <!-- LA VAN: la marca tambien sale a la calle -->
+  <section class="sec sec--tight">
+    <div class="wrap">
+      <div class="split split--center">
+        <div style="overflow:hidden;border-radius:var(--r-card)">
+          <img src="assets/img/foto/van-tridentes.webp" width="1200" height="675" loading="lazy" decoding="async"
+               style="width:100%;height:auto" alt="La van de La House of Demons con los tridentes de la marca">
+        </div>
+        <div>
+          <p class="bracket">Si la ves, es esta</p>
+          <h2 class="d-md" style="margin:var(--s3) 0 var(--s4)">La van<span class="aside">(con tridentes)</span></h2>
+          <p class="prose">La casa no se queda siempre en la Cra. 80. La van sale con los tridentes pintados, y cuando aparece en un evento, aparece el bar entero detrás.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -180,6 +209,6 @@
   </div>
 </footer>
 
-<script src="assets/js/lhod.js?v=3" defer></script>
+<script src="assets/js/lhod.js?v=4" defer></script>
 </body>
 </html>

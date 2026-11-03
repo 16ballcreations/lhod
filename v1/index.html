@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/lhod.css?v=3">
+<link rel="stylesheet" href="assets/css/lhod.css?v=4">
 </head>
 <body>
 
@@ -44,16 +44,23 @@
 
   <!-- 1 · Portada -->
   <section class="hero">
-    <p class="hero__note">Foto pendiente · barra de noche, luz de vela roja</p>
     <div class="wrap">
-      <p class="eyebrow">Laureles · Medellín</p>
-      <h1 class="h1">Burger · Pub rock<br>· Fitness</h1>
-      <p class="h3" style="color:var(--sangre);letter-spacing:.14em;margin:20px 0 0;padding-top:18px;border-top:1px solid var(--sangre);max-width:16ch">Hackeamos<br>la Matrix</p>
-      <p class="lede" style="margin-top:24px">Primero se come. Hamburguesas que no te tumban, cerveza para quien la quiera y café de filtro para quien no. Luego suena pesado hasta las dos. Y sí: también entrenamos. Las tres cosas en la misma dirección, sin pedirle permiso a nadie.</p>
-      <div class="actions">
-        <a class="btn btn--red" href="reservas.html">Reservar mesa</a>
-        <a class="btn" href="la-casa.html">Ver la carta</a>
-        <a class="btn" href="agenda.html">Ver agenda</a>
+      <div class="split split--center">
+        <div>
+          <p class="eyebrow">Laureles · Medellín</p>
+          <h1 class="h1">Burger · Pub rock<br>· Fitness</h1>
+          <p class="h3" style="color:var(--sangre);letter-spacing:.14em;margin:20px 0 0;padding-top:18px;border-top:1px solid var(--sangre);max-width:16ch">Hackeamos<br>la Matrix</p>
+          <p class="lede" style="margin-top:24px">Primero se come. Hamburguesas que no te tumban, cerveza para quien la quiera y café de filtro para quien no. Luego suena pesado hasta las dos. Y sí: también entrenamos. Las tres cosas en la misma dirección, sin pedirle permiso a nadie.</p>
+          <div class="actions">
+            <a class="btn btn--red" href="reservas.html">Reservar mesa</a>
+            <a class="btn" href="la-casa.html">Ver la carta</a>
+            <a class="btn" href="agenda.html">Ver agenda</a>
+          </div>
+        </div>
+        <figure style="margin:0;border:1px solid var(--linea);max-width:600px">
+          <img src="assets/img/foto/interior-danzig.webp" alt="Interior del bar con luz roja y arte de Danzig en la pared" width="1200" height="675" fetchpriority="high" loading="eager" decoding="async" style="width:100%;height:auto">
+          <figcaption class="mono muted" style="padding:10px 12px;border-top:1px solid var(--linea)">El local, un jueves. Luz roja y Danzig en la pared.</figcaption>
+        </figure>
       </div>
       <p class="status" data-estado>
         <span><i class="dot"></i><span data-estado-texto><b>Jue 16–24 · Vie 16–02 · Sáb 14–02</b></span></span>
@@ -114,6 +121,29 @@
       </div>
       <div class="prose" style="max-width:70ch;margin-bottom:32px">
         <p>Un bar de metal que te deja con hambre está haciendo la mitad del trabajo. Aquí se come de verdad, y la barra va por dos carriles: el de siempre y el que no lleva alcohol. Elige el tuyo, nadie lleva la cuenta.</p>
+        <p>Y hay algo que casi nadie en la escena puede decir: <strong>la casa tiene cerveza propia</strong>. Demons Beer, con sus propias etiquetas, en la misma barra donde pides el café.</p>
+      </div>
+      <div class="cards cards--4" style="margin-bottom:40px">
+        <div class="card">
+          <div class="card__media"><img src="assets/img/foto/demons-beer.webp" alt="Cinco cervezas Demons Beer de la casa, en la barra" width="600" height="600" loading="lazy" decoding="async"></div>
+          <h3 class="h3">Demons Beer</h3>
+          <p>Cerveza de marca propia. Cinco etiquetas de la casa.</p>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="assets/img/foto/burger-tridente.webp" alt="Hamburguesa de la casa servida con el tridente de la marca" width="600" height="600" loading="lazy" decoding="async"></div>
+          <h3 class="h3">Hamburguesas</h3>
+          <p>Con el tridente clavado, por si quedaba duda de dónde estás.</p>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="assets/img/foto/papas-calavera.webp" alt="Papas servidas en calavera con salsa de la casa" width="600" height="600" loading="lazy" decoding="async"></div>
+          <h3 class="h3">Papas</h3>
+          <p>Servidas dentro de una calavera. El plato normal se quedó en casa.</p>
+        </div>
+        <div class="card">
+          <div class="card__media"><img src="assets/img/foto/coctel-sello.webp" alt="Coctel de la casa junto al sello del bar" width="600" height="600" loading="lazy" decoding="async"></div>
+          <h3 class="h3">Barra</h3>
+          <p>Cocteles, mockteles y café. Los dos carriles, mismo mostrador.</p>
+        </div>
       </div>
       <ul class="tickets">
         <li class="ticket">
@@ -171,7 +201,7 @@
       </div>
       <div class="cards cards--4">
         <a class="card" href="la-casa.html">
-          <div class="card__media"><img src="https://i0.wp.com/lahouseofdemons.com/wp-content/uploads/2026/04/twoo-moon-feed-1.png?w=520&ssl=1" alt="Hamburguesa Two Mooon servida entre calaveras y velas" loading="lazy" width="520" height="520"></div>
+          <div class="card__media"><img src="assets/img/foto/burger-tridente.webp" alt="Hamburguesa de la casa servida con el tridente de la marca" loading="lazy" width="520" height="520"></div>
           <h3 class="h3">Pub</h3>
           <p>Hamburguesas, café de filtro, sodas artesanales y cerveza. Con alcohol y sin él.</p>
         </a>
@@ -285,6 +315,6 @@
   </div>
 </footer>
 
-<script src="assets/js/lhod.js?v=3"></script>
+<script src="assets/js/lhod.js?v=4"></script>
 </body>
 </html>

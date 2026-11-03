@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/lhod.css?v=3">
+<link rel="stylesheet" href="assets/css/lhod.css?v=4">
 </head>
 <body>
 
@@ -44,9 +44,21 @@
 
   <!-- HERO: la declaracion -->
   <section class="hero">
-    <div class="mask mask--a"><span>Foto pendiente<br>Hamburguesa Two Mooon</span></div>
-    <div class="mask mask--b"><span>Foto pendiente<br>Café de filtro</span></div>
-    <div class="mask mask--c"><span>Foto pendiente<br>Barra de noche</span></div>
+    <div class="mask mask--a" style="background:none;border:0">
+      <img src="assets/img/foto/burger-murcielago.webp" width="600" height="600" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover"
+           alt="Hamburguesa con papas y el murciélago de la casa">
+    </div>
+    <div class="mask mask--b" style="background:none;border:0">
+      <img src="assets/img/foto/cerveza-negra-sello.webp" width="600" height="600" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover"
+           alt="Cerveza negra servida bajo el sello del bar">
+    </div>
+    <div class="mask mask--c" style="background:none;border:0">
+      <img src="assets/img/foto/barra-botellas.webp" width="1200" height="675" loading="eager" decoding="async"
+           style="width:100%;height:100%;object-fit:cover"
+           alt="La barra del bar con sus botellas bajo luz roja">
+    </div>
     <div class="wrap hero__inner">
       <p class="bracket">La casa · cocina y barra</p>
       <h1 class="d-xl">La carta<span class="aside">(beber es opcional)</span></h1>
@@ -72,6 +84,10 @@
           <div>
             <h3 class="ticket__name">To Fast For Love</h3>
             <p class="ticket__meta">Hamburguesa de pollo con cerveza sweet porter. Nació en la noche Glam y se quedó en la casa.</p>
+            <div class="card__media" style="max-width:220px;margin-top:var(--s3)">
+              <img src="assets/img/foto/burger-tridente.webp" width="600" height="600" loading="lazy" decoding="async"
+                   alt="Hamburguesa de la casa servida con el tridente de la marca">
+            </div>
           </div>
           <p class="ticket__side"><span class="ticket__price" style="font-size:18px">$44.900</span></p>
         </li>
@@ -81,6 +97,10 @@
             <h3 class="ticket__name">Two Mooon</h3>
             <p class="ticket__meta">Hamburguesa de temporada, creada para las dos lunas llenas de mayo.</p>
             <p class="ticket__tags"><span class="tag">Precio por confirmar</span></p>
+            <div class="card__media" style="max-width:220px;margin-top:var(--s3)">
+              <img src="assets/img/foto/burger-murcielago.webp" width="600" height="600" loading="lazy" decoding="async"
+                   alt="Hamburguesa con papas y el murciélago de la casa">
+            </div>
           </div>
           <p class="ticket__side"><span class="ticket__price" style="font-size:18px">—</span></p>
         </li>
@@ -90,6 +110,10 @@
             <h3 class="ticket__name">Café, sodas artesanales y mockteles</h3>
             <p class="ticket__meta">La mitad sin alcohol de la carta, y no es el premio de consolación. Los mockteles tienen descuento las noches de Run Fuckk3r Run.</p>
             <p class="ticket__tags"><span class="tag">Precios por confirmar</span></p>
+            <div class="card__media" style="max-width:220px;margin-top:var(--s3)">
+              <img src="assets/img/foto/coctel-sello.webp" width="600" height="600" loading="lazy" decoding="async"
+                   alt="Coctel de la casa junto al sello del bar">
+            </div>
           </div>
           <p class="ticket__side"><span class="ticket__price" style="font-size:18px">—</span></p>
         </li>
@@ -97,8 +121,18 @@
           <p class="ticket__date">Barra</p>
           <div>
             <h3 class="ticket__name">Cerveza nacional y artesanal</h3>
-            <p class="ticket__meta">Con noches de 2×1 en nacionales y catas con cervecerías invitadas, como 4 Hermanos.</p>
+            <p class="ticket__meta">Con noches de 2×1 en nacionales y catas con cervecerías invitadas, como 4 Hermanos. Y la de la casa: Demons Beer, cinco etiquetas propias.</p>
             <p class="ticket__tags"><span class="tag">Precios por confirmar</span></p>
+            <div style="display:flex;gap:var(--s2);flex-wrap:wrap;margin-top:var(--s3)">
+              <div class="card__media" style="width:220px;max-width:100%">
+                <img src="assets/img/foto/demons-beer.webp" width="600" height="600" loading="lazy" decoding="async"
+                     alt="Cinco cervezas Demons Beer de la casa, en la barra">
+              </div>
+              <div class="card__media" style="width:220px;max-width:100%">
+                <img src="assets/img/foto/presagio-artesanal.webp" width="600" height="600" loading="lazy" decoding="async"
+                     alt="Cerveza artesanal Presagio, de las invitadas">
+              </div>
+            </div>
           </div>
           <p class="ticket__side"><span class="ticket__price" style="font-size:18px">—</span></p>
         </li>
@@ -136,31 +170,75 @@
     </div>
   </section>
 
+  <!-- CERVEZA PROPIA -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <p class="bracket">La barra · marca propia</p>
+        <h2 class="d-lg">Demons<br>Beer<span class="aside">(cinco etiquetas)</span></h2>
+        <p class="lede" style="margin-top:var(--s4)">La casa no solo vende cerveza: tiene la suya. Cinco etiquetas propias en la barra, que no vas a encontrar en otro bar de Medellín porque no se venden en otro bar de Medellín.</p>
+      </div>
+      <div class="split split--center">
+        <div class="card__media" style="border-radius:var(--r-feature)">
+          <img src="assets/img/foto/demons-beer.webp" width="600" height="600" loading="lazy" decoding="async"
+               alt="Cinco cervezas Demons Beer de la casa, en la barra">
+        </div>
+        <div class="facts">
+          <p class="facts__row"><span>Marca</span><b>Demons Beer</b></p>
+          <p class="facts__row"><span>Etiquetas</span><b>Cinco</b></p>
+          <p class="facts__row"><span>Dónde</span><b>Solo en la casa</b></p>
+          <p class="facts__row"><span>Variedades</span><b>Por confirmar</b></p>
+          <p class="facts__row"><span>Precios</span><b>Por confirmar</b></p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:var(--s5);max-width:70ch;font-size:16px">
+        Lo que se afirma aquí es lo que la foto demuestra: existen y son cinco. Los nombres de cada
+        variedad y sus precios los pone el bar, no esta demo.
+      </p>
+    </div>
+  </section>
+
   <!-- EL SITIO -->
   <section class="sec">
     <div class="wrap">
       <div class="sec__head">
-        <p class="bracket">Fotos actuales del archivo</p>
-        <h2 class="d-lg">El sitio</h2>
+        <p class="bracket">Fotos reales de la casa</p>
+        <h2 class="d-lg">El sitio<span class="aside">(tal como está)</span></h2>
+      </div>
+      <div style="overflow:hidden;border-radius:var(--r-card);margin-bottom:var(--s4)">
+        <img src="assets/img/foto/interior-danzig.webp" width="1200" height="675" loading="lazy" decoding="async"
+             style="width:100%;height:auto" alt="Interior del bar con luz roja y arte de Danzig en la pared">
       </div>
       <div class="cards">
         <article class="card">
-          <h3>La casa</h3>
-          <p>La casa y su gente.</p>
+          <div class="card__media">
+            <img src="assets/img/foto/papas-calavera.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Papas servidas en calavera con salsa de la casa">
+          </div>
+          <h3>La cocina</h3>
+          <p>Las papas llegan dentro de una calavera. Nadie aquí pidió un plato normal.</p>
         </article>
         <article class="card">
-          <h3>La noche</h3>
-          <p>Una noche cualquiera.</p>
+          <div class="card__media">
+            <img src="assets/img/foto/burger-cerveza-terraza.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Hamburguesa con cerveza en la terraza">
+          </div>
+          <h3>La terraza</h3>
+          <p>De día también se come. Hamburguesa, cerveza y la calle de Laureles al lado.</p>
         </article>
         <article class="card">
-          <h3>La comunidad</h3>
-          <p>La comunidad, en WhatsApp e Instagram.</p>
+          <div class="card__media">
+            <img src="assets/img/foto/cartel-cafe.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Cartel en la puerta del bar anunciando el café">
+          </div>
+          <h3>El tono</h3>
+          <p>El cartel de la puerta anuncia el café a su manera. Si eso te chocó, quizá no era para ti.</p>
         </article>
       </div>
       <div class="prose" style="margin-top:var(--s5)">
         <p class="muted" style="font-size:16px">
-          Estas son las únicas imágenes disponibles hoy del interior. En la propuesta hay una
-          sesión de fotos de una noche: es lo que separa esta demo de la versión definitiva.
+          Son capturas de las redes del propio bar, no una sesión de producto. Sirven para esto;
+          una noche fotografiada en serio sigue siendo lo que más cambiaría el resultado.
         </p>
       </div>
     </div>
@@ -218,6 +296,6 @@
   </div>
 </footer>
 
-<script src="assets/js/lhod.js?v=3" defer></script>
+<script src="assets/js/lhod.js?v=4" defer></script>
 </body>
 </html>

@@ -115,9 +115,10 @@ a{color:inherit}
 .sec__head .eyebrow{margin-bottom:var(--s3)}
 
 /* Eyebrow con chevrons, recurso de la referencia */
-.bracket{display:inline-flex;align-items:center;gap:10px;font-family:var(--data);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sangre)}
+.bracket{display:inline-flex;align-items:center;gap:10px;font-family:var(--data);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ceniza-rosa)}
 .bracket::before{content:"\25C2"}
 .bracket::after{content:"\25B8"}
+.bracket::before,.bracket::after{color:var(--sangre)}
 
 /* ---------- Botones: pastilla 15px ---------- */
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:500;font-size:15px;letter-spacing:.02em;text-transform:uppercase;padding:13px 20px;border:1px solid transparent;border-radius:var(--r);text-decoration:none;line-height:1;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
