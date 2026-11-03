@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/lhod.css?v=2">
+<link rel="stylesheet" href="assets/css/lhod.css?v=3">
 </head>
 <body>
 
@@ -49,7 +49,7 @@
     <div class="wrap hero__inner">
       <p class="bracket">Enero a agosto · eventos reales</p>
       <h1 class="d-xl">Toda<span class="aside">(la agenda)</span></h1>
-      <p class="lede">Todo lo que ocurre aquí tiene nombre, fecha, hora y precio en texto. No en una imagen: así lo encuentra Google y lo lee cualquiera.</p>
+      <p class="lede">Nombre, fecha, hora y precio. En texto, no dentro de una imagen que nadie puede buscar. Si vienes, sabes a qué vienes.</p>
       <div class="actions">
         <a class="btn btn--primary" href="reservas.html">Reservar mesa</a>
         <a class="btn btn--ghost" href="la-casa.html">Ver la carta</a>
@@ -268,11 +268,101 @@
 
       <div class="prose" style="margin-top:var(--s6)">
         <p class="muted" style="font-size:16px">
-          Los eventos marcados como «ya ocurrió» se mantienen visibles a propósito: sirven para
-          que alguien que llega nuevo entienda de qué va la casa. En el sitio real esa separación
+          Los eventos marcados como «ya ocurrió» se quedan a la vista a propósito: son la prueba
+          de que esto pasa de verdad, no una promesa de agencia. En el sitio real la separación
           es automática por fecha, sin que nadie tenga que moverlos a mano.
         </p>
       </div>
+    </div>
+  </section>
+
+  <!-- CARTELES: los flyers reales, cada uno con su fecha en texto -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <p class="bracket">Carteles publicados entre septiembre y noviembre</p>
+        <h2 class="d-lg">Los carteles<span class="aside">(y su letra pequeña)</span></h2>
+        <p class="lede" style="margin-top:var(--s4)">El bar anuncia así: un cartel por evento. El problema es que el dato vive dentro del píxel y nadie lo puede buscar. Aquí va el cartel, y al lado el dato en texto.</p>
+      </div>
+      <div class="cards">
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/battle-jacket.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de Battle Jacket: jornada de personalización con parches">
+          </div>
+          <h3>Battle Jacket</h3>
+          <p>Jornada de personalización con parches. Domingo 11 de octubre, de 18:00 a 23:00.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/chimbadas-oct.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de Muestra tus Chimbadas: noche de STEM y nerd-working">
+          </div>
+          <h3>Muestra tus Chimb4d4s</h3>
+          <p>Una noche de STEM, bugs y nerd-working. Viernes 30 de octubre, 20:00. Entrada gratis, consumo mínimo $25.000.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/halloween-zombie.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de la fiesta Zombie de Halloween">
+          </div>
+          <h3>Halloween Zombie</h3>
+          <p>Fiesta zombie y show. Sábado 31 de octubre. Entrada gratis.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/fotografia-voyerista.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de Fotografía Voyerista con Juan Porras">
+          </div>
+          <h3>Fotografía Voyerista</h3>
+          <p>Con Juan Porras. Sábado 17 de octubre, de 20:00 a 23:00. Entrada gratis, consumo mínimo $30.000.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/santa-muerte.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de la charla Santa Muerte, la gran transición">
+          </div>
+          <h3>Santa Muerte, la gran transición</h3>
+          <p>Charla. 15 de octubre.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/conspi-night-talks.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de Conspi Night Talks">
+          </div>
+          <h3>Conspi Night Talks</h3>
+          <p>Lo que nadie más se atreve a programar. Jueves 24 de septiembre, 21:00. Entrada gratis, con reserva previa.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/diabulus-mercyful.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer de Diabulus: sesión Mercyful Fate y King Diamond">
+          </div>
+          <h3>Diabulus · Mercyful Fate y King Diamond</h3>
+          <p>Hell fitness method. Jueves 22 de octubre, 20:00. Cover $45.000, con reserva previa.</p>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="assets/img/flyers/taller-ia.webp" width="600" height="600" loading="lazy" decoding="async"
+                 alt="Flyer del taller de agentes de IA para emprendedores">
+          </div>
+          <h3>Crea tu agente con IA</h3>
+          <p>Taller para emprendedores. Sábado 03 de octubre, de 16:00 a 19:00. Entrada gratis, consumo mínimo $25.000, con reserva previa.</p>
+        </article>
+
+      </div>
+      <p class="muted" style="margin-top:var(--s5);max-width:70ch;font-size:16px">
+        Los datos de estos carteles se transcribieron tal como están publicados. Lo que el
+        cartel no dice, esta página tampoco se lo inventa.
+      </p>
     </div>
   </section>
 
@@ -298,7 +388,7 @@
         </article>
         <article class="card">
           <h3>Charlas</h3>
-          <p>Temas que a la escena le interesan y nadie más programa. Suelen ser gratis.</p>
+          <p>Temas que a la escena le interesan y ningún otro bar se atreve a poner en cartel. Suelen ser gratis.</p>
         </article>
       </div>
       <div class="actions" style="margin-top:var(--s6)">
@@ -315,7 +405,7 @@
     <div class="foot__cols">
       <div>
         <h4>La House of Demons</h4>
-        <p class="prose" style="font-size:15.5px;color:var(--humo)">Bar de rock y metal en Laureles. Pub, cocina, entrenamiento y un festival propio.</p>
+        <p class="prose" style="font-size:15.5px;color:var(--humo)">Burger · Pub Rock · Fitness en Laureles. Cocina, barra con y sin alcohol, entrenamiento y un festival propio.</p>
       </div>
       <div>
         <h4>Secciones</h4>
@@ -346,6 +436,6 @@
   </div>
 </footer>
 
-<script src="assets/js/lhod.js?v=2" defer></script>
+<script src="assets/js/lhod.js?v=3" defer></script>
 </body>
 </html>

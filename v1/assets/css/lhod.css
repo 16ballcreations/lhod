@@ -246,3 +246,9 @@ a{color:inherit}
 .foot a{color:var(--humo);text-decoration:none;font-size:16px}
 .foot a:hover,.foot a:focus-visible{color:var(--hueso)}
 .foot__legal{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--linea);display:flex;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;font-family:var(--data);font-size:11px;letter-spacing:.08em;color:var(--humo);text-transform:uppercase}
+
+/* Movil: el precio mas largo ($1.857.000 + "Lista de espera") no cabe
+   en 375px con nowrap. Se permite que fluya. */
+@media (max-width:620px){
+  .ticket__side{flex-wrap:wrap;white-space:normal;row-gap:var(--s2)}
+}
